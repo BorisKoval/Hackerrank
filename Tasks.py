@@ -1,5 +1,6 @@
-""" 
+import sys
 
+""" 
 class TasksSolves():
     
     
@@ -21,9 +22,14 @@ print(TasksSolves.dict_and_maps(path))
 
  """
 
-input_str = input()
-input_strings = input_str.split('\n')
+input_str = ''
+lines = input()
 
-some_dict = input_strings[1:int(input_strings[0])].split(' ')
+for i in range(0, int(lines)):
+     input_str+= input()
 
-print(some_dict)
+#input_strings = input_str.split('\n')
+
+#some_dict = input_strings[1:int(input_strings[0])].split(' ')
+
+print(input_str)
