@@ -26,6 +26,14 @@ class TasksSolves():
             else:
                 print("Not found")
 
+    @staticmethod
+    def divisor_sum(n):
+        sum = 0
+        for i in range(1, n+1):
+            if n % i is 0:
+                sum+=id
+        return sum
+
 path = 'Inputs/day8_input.txt'
 print(TasksSolves.dict_and_maps(path))
 
